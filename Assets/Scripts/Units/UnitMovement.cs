@@ -8,13 +8,33 @@ using UnityEngine.InputSystem;
 public class UnitMovement : NetworkBehaviour
 {
     [SerializeField] private NavMeshAgent agent = null;
+    [SerializeField] private Targeter targeter = null;
+    [SerializeField] private float chaseRange = 10f;
 
     #region Server
 
     [ServerCallback]
     private void Update()
     {
-        if (agent.hasPath) { return; }
+        Targetable target = targeter.GetTarget();
+
+        if(targeter.GetTarget() != null)
+        {
+            if ((target.transform.position - transform.position).sqrMagnitude > chaseRange * chaseRange)
+            {
+                // chase
+                agent.SetDestination(targeter.GetTarget().transform.position);
+            }
+            else if (agent.hasPath)
+            {
+                // stop chase
+                agent.ResetPath();
+            }
+
+            return;
+        }
+
+        if (!agent.hasPath) { return; }
 
         if(agent.remainingDistance > agent.stoppingDistance) { return; }
 
@@ -24,6 +44,8 @@ public class UnitMovement : NetworkBehaviour
     [Command]
     public void CmdMove(Vector3 position)
     {
+        targeter.ClearTarget();
+
         // Invalid Position
         if(!NavMesh.SamplePosition(position, out NavMeshHit hit, 1f, NavMesh.AllAreas)) { return; }
 
