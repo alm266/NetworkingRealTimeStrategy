@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Health
+    - HealthDisplay
     - RTSNetworkManager
     - RTSPlayer
     - Targetable
@@ -122,37 +123,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11988}
+      Script: {instanceID: 11980}
     - Class: 114
-      Script: {instanceID: 12130}
+      Script: {instanceID: 11990}
     - Class: 114
-      Script: {instanceID: 12218}
+      Script: {instanceID: 12134}
     - Class: 114
-      Script: {instanceID: 12514}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12556}
+      Script: {instanceID: 12520}
     - Class: 114
-      Script: {instanceID: 12584}
+      Script: {instanceID: 12562}
     - Class: 114
-      Script: {instanceID: 12726}
+      Script: {instanceID: 12590}
     - Class: 114
-      Script: {instanceID: 13078}
+      Script: {instanceID: 13082}
     - Class: 114
-      Script: {instanceID: 13528}
+      Script: {instanceID: 13532}
     - Class: 114
-      Script: {instanceID: 13706}
+      Script: {instanceID: 13710}
     - Class: 114
-      Script: {instanceID: 13902}
+      Script: {instanceID: 13906}
     - Class: 114
-      Script: {instanceID: 15220}
+      Script: {instanceID: 15226}
     - Class: 114
-      Script: {instanceID: 15652}
+      Script: {instanceID: 15660}
     - Class: 114
-      Script: {instanceID: 16262}
+      Script: {instanceID: 16270}
     - Class: 114
-      Script: {instanceID: 16436}
+      Script: {instanceID: 16444}
     - Class: 114
-      Script: {instanceID: 18118}
+      Script: {instanceID: 18126}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -215,95 +216,97 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11988}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 11990}
     - Class: 114
-      Script: {instanceID: 12236}
+      Script: {instanceID: 12082}
     - Class: 114
-      Script: {instanceID: 12410}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12450}
+      Script: {instanceID: 12240}
     - Class: 114
-      Script: {instanceID: 12544}
+      Script: {instanceID: 12396}
     - Class: 114
-      Script: {instanceID: 12726}
+      Script: {instanceID: 12416}
     - Class: 114
-      Script: {instanceID: 12792}
+      Script: {instanceID: 12456}
     - Class: 114
-      Script: {instanceID: 13064}
+      Script: {instanceID: 12550}
     - Class: 114
-      Script: {instanceID: 13098}
+      Script: {instanceID: 12796}
     - Class: 114
-      Script: {instanceID: 13592}
+      Script: {instanceID: 13068}
     - Class: 114
-      Script: {instanceID: 13684}
+      Script: {instanceID: 13102}
     - Class: 114
-      Script: {instanceID: 14094}
+      Script: {instanceID: 13596}
     - Class: 114
-      Script: {instanceID: 14416}
+      Script: {instanceID: 13688}
     - Class: 114
-      Script: {instanceID: 14494}
+      Script: {instanceID: 14020}
     - Class: 114
-      Script: {instanceID: 14584}
+      Script: {instanceID: 14100}
     - Class: 114
-      Script: {instanceID: 14772}
+      Script: {instanceID: 14422}
     - Class: 114
-      Script: {instanceID: 14820}
+      Script: {instanceID: 14500}
     - Class: 114
-      Script: {instanceID: 15266}
+      Script: {instanceID: 14590}
     - Class: 114
-      Script: {instanceID: 15300}
+      Script: {instanceID: 14778}
     - Class: 114
-      Script: {instanceID: 15348}
+      Script: {instanceID: 14826}
     - Class: 114
-      Script: {instanceID: 15812}
+      Script: {instanceID: 15272}
     - Class: 114
-      Script: {instanceID: 15906}
+      Script: {instanceID: 15306}
     - Class: 114
-      Script: {instanceID: 15932}
+      Script: {instanceID: 15354}
     - Class: 114
-      Script: {instanceID: 16132}
+      Script: {instanceID: 15540}
     - Class: 114
-      Script: {instanceID: 16146}
+      Script: {instanceID: 15820}
     - Class: 114
-      Script: {instanceID: 16178}
+      Script: {instanceID: 15914}
     - Class: 114
-      Script: {instanceID: 16188}
+      Script: {instanceID: 15940}
     - Class: 114
-      Script: {instanceID: 16694}
+      Script: {instanceID: 16140}
     - Class: 114
-      Script: {instanceID: 16802}
+      Script: {instanceID: 16154}
     - Class: 114
-      Script: {instanceID: 16894}
+      Script: {instanceID: 16186}
     - Class: 114
-      Script: {instanceID: 17206}
+      Script: {instanceID: 16196}
     - Class: 114
-      Script: {instanceID: 17360}
+      Script: {instanceID: 16702}
     - Class: 114
-      Script: {instanceID: 17388}
+      Script: {instanceID: 16810}
     - Class: 114
-      Script: {instanceID: 17480}
+      Script: {instanceID: 16902}
     - Class: 114
-      Script: {instanceID: 17542}
+      Script: {instanceID: 17214}
     - Class: 114
-      Script: {instanceID: 17616}
+      Script: {instanceID: 17368}
     - Class: 114
-      Script: {instanceID: 17840}
+      Script: {instanceID: 17396}
+    - Class: 114
+      Script: {instanceID: 17488}
+    - Class: 114
+      Script: {instanceID: 17550}
+    - Class: 114
+      Script: {instanceID: 17624}
     - Class: 114
       Script: {instanceID: 17848}
     - Class: 114
-      Script: {instanceID: 17948}
+      Script: {instanceID: 17856}
     - Class: 114
-      Script: {instanceID: 18138}
+      Script: {instanceID: 17956}
     - Class: 114
       Script: {instanceID: 18146}
     - Class: 114
-      Script: {instanceID: 18166}
+      Script: {instanceID: 18154}
     - Class: 114
-      Script: {instanceID: 19820}
-    - Class: 114
-      Script: {instanceID: 21028}
-    - Class: 114
-      Script: {instanceID: 21146}
+      Script: {instanceID: 18174}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -353,6 +356,12 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: a6e561615949734e9f12f9b61661f43e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -387,6 +396,12 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.dll
     namespaceName: Mirror
     className: TelepathyTransport
+  - hash:
+      serializedVersion: 2
+      Hash: af48a789b1b7f4b1ee7e8472a0c5d783
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UnitFiring
   - hash:
       serializedVersion: 2
       Hash: 23d669c8bf2983ca4a3df160658318a6
@@ -501,6 +516,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: ac68a0e8f9aa4bb80a2c60f67db7d989
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UnitProjectile
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -639,12 +660,6 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.AdditiveScenes
     className: PlayerCamera
-  - hash:
-      serializedVersion: 2
-      Hash: a6e561615949734e9f12f9b61661f43e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: 95e6797232b7d5831c9feb55a8582905
@@ -969,6 +984,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 514775331e04882828052c5022b7ab5d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Health
   - hash:
       serializedVersion: 2
       Hash: 6fd2bb55b3ee5edb6040a1c5bccd0e07
@@ -1413,6 +1434,12 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.Examples.dll
     namespaceName: Mirror.Examples.MultipleMatch
     className: CellGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 1cdc4b0b3be9ad442763b453556cdfb3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthDisplay
   - hash:
       serializedVersion: 2
       Hash: f050e4ebd311386367bb1906f9218b01
@@ -2235,24 +2262,6 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.dll
     namespaceName: kcp2k
     className: KcpTransport
-  - hash:
-      serializedVersion: 2
-      Hash: af48a789b1b7f4b1ee7e8472a0c5d783
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UnitFiring
-  - hash:
-      serializedVersion: 2
-      Hash: ac68a0e8f9aa4bb80a2c60f67db7d989
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: UnitProjectile
-  - hash:
-      serializedVersion: 2
-      Hash: 514775331e04882828052c5022b7ab5d
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Health
   platform: 5
   scenePathNames:
   - Assets/Scenes/Scene_Menu.unity
