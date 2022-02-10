@@ -1,13 +1,16 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Health
     - RTSNetworkManager
     - RTSPlayer
     - Targetable
     - Targeter
     - Unit
     - UnitCommandGiver
+    - UnitFiring
     - UnitMovement
+    - UnitProjectile
     - UnitSelectionHandler
     - UnitSpawner
     Mirror.Components.dll:
@@ -135,21 +138,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13078}
     - Class: 114
-      Script: {instanceID: 13526}
+      Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 13704}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 13900}
+      Script: {instanceID: 13902}
     - Class: 114
-      Script: {instanceID: 15218}
+      Script: {instanceID: 15220}
     - Class: 114
-      Script: {instanceID: 15650}
+      Script: {instanceID: 15652}
     - Class: 114
-      Script: {instanceID: 16260}
+      Script: {instanceID: 16262}
     - Class: 114
-      Script: {instanceID: 16434}
+      Script: {instanceID: 16436}
     - Class: 114
-      Script: {instanceID: 18114}
+      Script: {instanceID: 18118}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -186,6 +189,8 @@ ScriptsOnlyBuild:
     - Class: 43
       Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
@@ -226,76 +231,84 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13064}
     - Class: 114
-      Script: {instanceID: 13590}
+      Script: {instanceID: 13098}
     - Class: 114
-      Script: {instanceID: 13682}
+      Script: {instanceID: 13592}
     - Class: 114
-      Script: {instanceID: 14092}
+      Script: {instanceID: 13684}
     - Class: 114
-      Script: {instanceID: 14414}
+      Script: {instanceID: 14094}
     - Class: 114
-      Script: {instanceID: 14492}
+      Script: {instanceID: 14416}
     - Class: 114
-      Script: {instanceID: 14582}
+      Script: {instanceID: 14494}
     - Class: 114
-      Script: {instanceID: 14770}
+      Script: {instanceID: 14584}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14772}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 14820}
     - Class: 114
-      Script: {instanceID: 15298}
+      Script: {instanceID: 15266}
     - Class: 114
-      Script: {instanceID: 15346}
+      Script: {instanceID: 15300}
     - Class: 114
-      Script: {instanceID: 15810}
+      Script: {instanceID: 15348}
     - Class: 114
-      Script: {instanceID: 15904}
+      Script: {instanceID: 15812}
     - Class: 114
-      Script: {instanceID: 15930}
+      Script: {instanceID: 15906}
     - Class: 114
-      Script: {instanceID: 16130}
+      Script: {instanceID: 15932}
     - Class: 114
-      Script: {instanceID: 16144}
+      Script: {instanceID: 16132}
     - Class: 114
-      Script: {instanceID: 16176}
+      Script: {instanceID: 16146}
     - Class: 114
-      Script: {instanceID: 16186}
+      Script: {instanceID: 16178}
     - Class: 114
-      Script: {instanceID: 16692}
+      Script: {instanceID: 16188}
     - Class: 114
-      Script: {instanceID: 16800}
+      Script: {instanceID: 16694}
     - Class: 114
-      Script: {instanceID: 16892}
+      Script: {instanceID: 16802}
     - Class: 114
-      Script: {instanceID: 17204}
+      Script: {instanceID: 16894}
     - Class: 114
-      Script: {instanceID: 17358}
+      Script: {instanceID: 17206}
     - Class: 114
-      Script: {instanceID: 17476}
+      Script: {instanceID: 17360}
     - Class: 114
-      Script: {instanceID: 17538}
+      Script: {instanceID: 17388}
     - Class: 114
-      Script: {instanceID: 17612}
+      Script: {instanceID: 17480}
     - Class: 114
-      Script: {instanceID: 17836}
+      Script: {instanceID: 17542}
     - Class: 114
-      Script: {instanceID: 17844}
+      Script: {instanceID: 17616}
     - Class: 114
-      Script: {instanceID: 17944}
+      Script: {instanceID: 17840}
     - Class: 114
-      Script: {instanceID: 18134}
+      Script: {instanceID: 17848}
     - Class: 114
-      Script: {instanceID: 18142}
+      Script: {instanceID: 17948}
     - Class: 114
-      Script: {instanceID: 18162}
+      Script: {instanceID: 18138}
     - Class: 114
-      Script: {instanceID: 20388}
+      Script: {instanceID: 18146}
     - Class: 114
-      Script: {instanceID: 20396}
+      Script: {instanceID: 18166}
+    - Class: 114
+      Script: {instanceID: 19820}
+    - Class: 114
+      Script: {instanceID: 21028}
+    - Class: 114
+      Script: {instanceID: 21146}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -746,6 +759,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem.dll
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputActionEditorWindow
+  - hash:
+      serializedVersion: 2
+      Hash: cb3d51a51abb534d5681968039be290d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Targetable
   - hash:
       serializedVersion: 2
       Hash: 05655f7deb066a961c41619ac9e98263
@@ -1930,6 +1949,12 @@ ScriptsOnlyBuild:
     className: Player
   - hash:
       serializedVersion: 2
+      Hash: 6fd2bb55b3ee5edb6040a1c5bccd0e07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Targeter
+  - hash:
+      serializedVersion: 2
       Hash: c5bfd0f6f4664318b8b9f50d88408421
     assemblyName: Unity.RenderPipelines.Universal.Runtime.dll
     namespaceName: UnityEngine.Rendering.Universal
@@ -2212,16 +2237,22 @@ ScriptsOnlyBuild:
     className: KcpTransport
   - hash:
       serializedVersion: 2
-      Hash: cb3d51a51abb534d5681968039be290d
+      Hash: af48a789b1b7f4b1ee7e8472a0c5d783
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Targetable
+    className: UnitFiring
   - hash:
       serializedVersion: 2
-      Hash: 6fd2bb55b3ee5edb6040a1c5bccd0e07
+      Hash: ac68a0e8f9aa4bb80a2c60f67db7d989
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Targeter
+    className: UnitProjectile
+  - hash:
+      serializedVersion: 2
+      Hash: 514775331e04882828052c5022b7ab5d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Health
   platform: 5
   scenePathNames:
   - Assets/Scenes/Scene_Menu.unity
