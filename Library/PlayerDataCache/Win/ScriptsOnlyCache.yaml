@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - GameOverHandler
     - Health
     - HealthDisplay
     - RTSNetworkManager
@@ -8,6 +9,7 @@ ScriptsOnlyBuild:
     - Targetable
     - Targeter
     - Unit
+    - UnitBase
     - UnitCommandGiver
     - UnitFiring
     - UnitMovement
@@ -307,6 +309,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 18154}
     - Class: 114
       Script: {instanceID: 18174}
+    - Class: 114
+      Script: {instanceID: 23130}
+    - Class: 114
+      Script: {instanceID: 23724}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -572,7 +578,7 @@ ScriptsOnlyBuild:
     className: PlayerInputManagerEditor
   - hash:
       serializedVersion: 2
-      Hash: 642f836ec0876606c27e63a67cf18dcd
+      Hash: c99051cc0a4f103bf7e37da1b978d087
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RTSNetworkManager
@@ -1214,7 +1220,7 @@ ScriptsOnlyBuild:
     className: FadeInOut
   - hash:
       serializedVersion: 2
-      Hash: 067e81fa3a445454099cee5602247fb1
+      Hash: 64ff8d569ebebe4b442ccfb41eb45257
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: UnitSpawner
@@ -1382,7 +1388,7 @@ ScriptsOnlyBuild:
     className: DownloadableSample
   - hash:
       serializedVersion: 2
-      Hash: 82b5fa49ea9807fa667ad3f7517fb1f1
+      Hash: d2df7289f01b15125e3585b231543041
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Unit
@@ -2262,6 +2268,18 @@ ScriptsOnlyBuild:
     assemblyName: Mirror.dll
     namespaceName: kcp2k
     className: KcpTransport
+  - hash:
+      serializedVersion: 2
+      Hash: 380ddbbf75cc03be59f0520ff8452c87
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UnitBase
+  - hash:
+      serializedVersion: 2
+      Hash: 6fd2bb55b3ee5edb6040a1c5bccd0e07
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameOverHandler
   platform: 5
   scenePathNames:
   - Assets/Scenes/Scene_Menu.unity

@@ -150,6 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  health: {fileID: 9157227070038589679}
   unitMovement: {fileID: -6299697632153184045}
   targeter: {fileID: 4025534804674510822}
   onSelected:
@@ -242,7 +243,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3392746510223899081, guid: a794290031574bb4b9e8ac5351a5777c, type: 3}
   projectileSpawnPoint: {fileID: 8920634285344194192}
   fireRange: 11
-  fireRate: 3
+  fireRate: 6
   rotationSpeed: 20
 --- !u!114 &9157227070038589679
 MonoBehaviour:
