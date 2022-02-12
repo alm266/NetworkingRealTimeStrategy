@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 5442886348699293112}
   - component: {fileID: 9157227070038589679}
   - component: {fileID: 9210401586873350207}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Unit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3392746510223899081, guid: a794290031574bb4b9e8ac5351a5777c, type: 3}
   projectileSpawnPoint: {fileID: 8920634285344194192}
   fireRange: 11
-  fireRate: 6
+  fireRate: 1
   rotationSpeed: 20
 --- !u!114 &9157227070038589679
 MonoBehaviour:
