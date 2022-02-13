@@ -62,19 +62,21 @@
     <Compile Include="Assets\Scripts\Networking\RTSNetworkManager.cs" />
     <Compile Include="Assets\Scripts\Units\UnitSelectionHandler.cs" />
     <Compile Include="Assets\Scripts\Combat\Targetable.cs" />
+    <Compile Include="Assets\Scripts\Buildings\BuildingButton.cs" />
+    <Compile Include="Assets\Scripts\Menus\GameOverDisplay.cs" />
     <Compile Include="Assets\Scripts\Combat\Health.cs" />
     <Compile Include="Assets\Scripts\Buildings\UnitBase.cs" />
+    <Compile Include="Assets\Scripts\Buildings\Building.cs" />
     <Compile Include="Assets\Scripts\Buildings\UnitSpawner.cs" />
     <Compile Include="Assets\Scripts\Units\Unit.cs" />
     <Compile Include="Assets\Scripts\Combat\HealthDisplay.cs" />
+    <Compile Include="Assets\Scripts\Cameras\FaceCamera.cs" />
     <Compile Include="Assets\Scripts\Units\UnitMovement.cs" />
     <Compile Include="Assets\Scripts\Buildings\GameOverHandler.cs" />
     <Compile Include="Assets\Scripts\Combat\Targeter.cs" />
     <Compile Include="Assets\Scripts\Networking\RTSPlayer.cs" />
-    <Compile Include="Assets\Scripts\Menus\GameOverDisplay.cs" />
-    <Compile Include="Assets\Scripts\Cameras\FaceCamera.cs" />
-    <Compile Include="Assets\Scripts\Buildings\Building.cs" />
-    <Compile Include="Assets\Scripts\Buildings\BuildingButton.cs" />
+    <Compile Include="Assets\Scripts\Resources\ResourcesDisplay.cs" />
+    <Compile Include="Assets\Scripts\Buildings\ResourceGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />

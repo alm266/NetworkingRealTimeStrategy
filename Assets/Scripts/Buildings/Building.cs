@@ -29,7 +29,7 @@ public class Building : NetworkBehaviour
 
     public int GetId()
     {
-        return price;
+        return id;
     }
 
     public int GetPrice()
