@@ -5,14 +5,22 @@ using UnityEngine;
 
 public class RTSPlayer : NetworkBehaviour
 {
+    [SerializeField] private LayerMask buildingBlockLayer = new LayerMask();
     [SerializeField] private Building[] buildings = new Building[0];
+    [SerializeField] private float buildingRangeLimit = 5f;
 
     [SyncVar(hook = nameof(ClientHandleResourcesUpdated))]
     private int resources = 500;
     public event Action<int> ClientOnResourcesUpdated;
 
+    private Color teamColor = new Color();
     private List<Unit> myUnits = new List<Unit>();
     private List<Building> myBuildings = new List<Building>();
+
+    public Color GetTeamColor()
+    {
+        return teamColor;
+    }
 
     public int GetResources()
     {
@@ -29,10 +37,29 @@ public class RTSPlayer : NetworkBehaviour
         return myBuildings;
     }
 
-    [Server]
-    public void SetResources(int newResources)
+    public bool CanPlaceBuilding(BoxCollider buildingCollider, Vector3 position)
     {
-        resources = newResources;
+        if (Physics.CheckBox(
+                position + buildingCollider.center,
+                buildingCollider.size / 2,
+                Quaternion.identity,
+                buildingBlockLayer))
+        {
+            return false;
+        }
+
+        // if new building is in range of any existing building
+        foreach (Building building in myBuildings)
+        {
+            if ((position - building.transform.position).sqrMagnitude
+                <= buildingRangeLimit * buildingRangeLimit)
+            {
+                return true;
+            }
+        }
+
+        return false;
+
     }
 
     #region Server
@@ -53,6 +80,18 @@ public class RTSPlayer : NetworkBehaviour
         Building.ServerOnBuildingDespawned -= ServerHandleBuildingDespawned;
     }
 
+    [Server]
+    public void SetTeamColor(Color newTeamColor)
+    {
+        teamColor = newTeamColor;
+    }
+
+    [Server]
+    public void SetResources(int newResources)
+    {
+        resources = newResources;
+    }
+
     [Command]
     public void CmdTryPlaceBuilding(int buildingId, Vector3 position)
     {
@@ -68,12 +107,20 @@ public class RTSPlayer : NetworkBehaviour
 
         if(buildingToPlace == null) { return; }
 
+        if(resources < buildingToPlace.GetPrice()) { return; }
+
+        BoxCollider buildingCollider = buildingToPlace.GetComponent<BoxCollider>();
+
+        if (!CanPlaceBuilding(buildingCollider, position)) { return; }
+
         GameObject buildingInstance = Instantiate(
             buildingToPlace.gameObject,
             position,
             Quaternion.identity);
 
         NetworkServer.Spawn(buildingInstance, connectionToClient);
+
+        SetResources(resources - buildingToPlace.GetPrice());
     }
 
     private void ServerHandleUnitSpawned(Unit unit)
