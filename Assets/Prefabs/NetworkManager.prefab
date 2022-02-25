@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7194187045816555227}
   - component: {fileID: 7194187045816555226}
   - component: {fileID: 7194187045816555229}
-  - component: {fileID: 7194187045816555228}
   m_Layer: 0
   m_Name: NetworkManager
   m_TagString: Untagged
@@ -50,7 +49,7 @@ MonoBehaviour:
   autoStartServerBuild: 1
   serverTickRate: 30
   offlineScene: Assets/Scenes/Scene_Menu.unity
-  onlineScene: Assets/Scenes/Scene_Map_01.unity
+  onlineScene: 
   transport: {fileID: 7194187045816555229}
   networkAddress: localhost
   maxConnections: 100
@@ -59,13 +58,17 @@ MonoBehaviour:
   autoCreatePlayer: 1
   playerSpawnMethod: 1
   spawnPrefabs:
-  - {fileID: 3395258146712693111, guid: 9df466994a284b7448c8f550d2e149ab, type: 3}
   - {fileID: 9067779182589375624, guid: e95c6e95530f0cf4fb318ce7d6c588f8, type: 3}
-  - {fileID: 3392746510223899081, guid: a794290031574bb4b9e8ac5351a5777c, type: 3}
   - {fileID: 777250332385444459, guid: 610090fc5988a184cbe592c7c633625d, type: 3}
   - {fileID: 9067779182589375624, guid: 60b084887545c1147899a35a5c8d3f5e, type: 3}
   - {fileID: 9067779182589375624, guid: d51f62157f5978644af78bac33dc3080, type: 3}
-  unitSpawnerPrefab: {fileID: 9067779182589375624, guid: e95c6e95530f0cf4fb318ce7d6c588f8, type: 3}
+  - {fileID: 8194655373085659161, guid: d8e1a9939a34e924cb910b79ac5bca25, type: 3}
+  - {fileID: 8762639894153781643, guid: eb9ef06cc5aee094caa1e3744615e1dc, type: 3}
+  - {fileID: 4137772798471662558, guid: f323ee8847045f04580b4dab64842040, type: 3}
+  - {fileID: 4792554601717841526, guid: 085d6a1374ba87b4a9b1af89ca264602, type: 3}
+  - {fileID: 2355646207199638912, guid: 590557673b39fb444a741895b3442f6b, type: 3}
+  - {fileID: 3849285257562267118, guid: d3ffde81a284ee6418dd44e1e8435477, type: 3}
+  unitBasePrefab: {fileID: 9067779182589375624, guid: e95c6e95530f0cf4fb318ce7d6c588f8, type: 3}
   gameOverHandlerPrefab: {fileID: 5023471033292387446, guid: 610090fc5988a184cbe592c7c633625d, type: 3}
 --- !u!114 &7194187045816555229
 MonoBehaviour:
@@ -96,17 +99,3 @@ MonoBehaviour:
   debugLog: 0
   statisticsGUI: 0
   statisticsLog: 0
---- !u!114 &7194187045816555228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7194187045816555231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6442dc8070ceb41f094e44de0bf87274, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  offsetX: 0
-  offsetY: 0

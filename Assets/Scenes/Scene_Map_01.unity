@@ -1427,6 +1427,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6078399062073427347, guid: ec74dc5593342a24a9de41b28b4887ae, type: 3}
+      propertyPath: building
+      value: 
+      objectReference: {fileID: 8195719609690719149, guid: f323ee8847045f04580b4dab64842040, type: 3}
     - target: {fileID: 8753346278550445793, guid: ec74dc5593342a24a9de41b28b4887ae, type: 3}
       propertyPath: m_Name
       value: BuildingDisplay
@@ -2375,7 +2379,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 50
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2

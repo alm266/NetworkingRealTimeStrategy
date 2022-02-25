@@ -81,6 +81,9 @@
     <Compile Include="Assets\Scripts\Combat\Targeter.cs" />
     <Compile Include="Assets\Scripts\Networking\RTSPlayer.cs" />
     <Compile Include="Assets\Scripts\Cameras\Minimap.cs" />
+    <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Menus\JoinLobbyMenu.cs" />
+    <Compile Include="Assets\Scripts\Menus\LobbyMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
