@@ -80,13 +80,27 @@ ScriptsOnlyBuild:
     - UnityEditor.Rendering.Universal.UniversalProjectSettings
     Unity.RenderPipelines.Universal.Runtime.dll:
     - UnityEngine.Rendering.Universal.Bloom
+    - UnityEngine.Rendering.Universal.ChannelMixer
+    - UnityEngine.Rendering.Universal.ChromaticAberration
+    - UnityEngine.Rendering.Universal.ColorAdjustments
+    - UnityEngine.Rendering.Universal.ColorCurves
+    - UnityEngine.Rendering.Universal.ColorLookup
+    - UnityEngine.Rendering.Universal.DepthOfField
+    - UnityEngine.Rendering.Universal.FilmGrain
     - UnityEngine.Rendering.Universal.ForwardRendererData
+    - UnityEngine.Rendering.Universal.LensDistortion
+    - UnityEngine.Rendering.Universal.LiftGammaGain
+    - UnityEngine.Rendering.Universal.MotionBlur
+    - UnityEngine.Rendering.Universal.PaniniProjection
     - UnityEngine.Rendering.Universal.PostProcessData
+    - UnityEngine.Rendering.Universal.ShadowsMidtonesHighlights
+    - UnityEngine.Rendering.Universal.SplitToning
     - UnityEngine.Rendering.Universal.Tonemapping
     - UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset
     - UnityEngine.Rendering.Universal.UniversalRenderPipelineEditorResources
     - UnityEngine.Rendering.Universal.Vignette
+    - UnityEngine.Rendering.Universal.WhiteBalance
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -234,15 +248,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16954}
     - Class: 114
-      Script: {instanceID: 17422}
+      Script: {instanceID: 17424}
     - Class: 114
-      Script: {instanceID: 17450}
+      Script: {instanceID: 17452}
     - Class: 114
-      Script: {instanceID: 17766}
+      Script: {instanceID: 17768}
     - Class: 114
-      Script: {instanceID: 17878}
+      Script: {instanceID: 17880}
     - Class: 114
-      Script: {instanceID: 18182}
+      Script: {instanceID: 18184}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -433,29 +447,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17338}
     - Class: 114
-      Script: {instanceID: 17422}
+      Script: {instanceID: 17424}
     - Class: 114
-      Script: {instanceID: 17450}
+      Script: {instanceID: 17452}
     - Class: 114
-      Script: {instanceID: 17542}
+      Script: {instanceID: 17544}
     - Class: 114
-      Script: {instanceID: 17604}
+      Script: {instanceID: 17606}
     - Class: 114
-      Script: {instanceID: 17678}
+      Script: {instanceID: 17680}
     - Class: 114
-      Script: {instanceID: 17904}
+      Script: {instanceID: 17906}
     - Class: 114
-      Script: {instanceID: 17912}
+      Script: {instanceID: 17914}
     - Class: 114
-      Script: {instanceID: 17960}
+      Script: {instanceID: 17962}
     - Class: 114
-      Script: {instanceID: 18012}
+      Script: {instanceID: 18014}
     - Class: 114
-      Script: {instanceID: 18202}
+      Script: {instanceID: 18204}
     - Class: 114
-      Script: {instanceID: 18210}
+      Script: {instanceID: 18212}
     - Class: 114
-      Script: {instanceID: 18230}
+      Script: {instanceID: 18232}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1743,7 +1757,7 @@ ScriptsOnlyBuild:
     className: TeamColorSetter
   - hash:
       serializedVersion: 2
-      Hash: 1dd0e466e78132bd7e93a7102e2a7271
+      Hash: d602590cba7062ad3248f7693a1cc5f5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LobbyMenu

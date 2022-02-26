@@ -27,7 +27,7 @@ public class JoinLobbyMenu : MonoBehaviour
     {
         string address = addressInput.text;
 
-        NetworkManager.singleton.networkAddress = address;
+        NetworkManager.singleton.networkAddress = (string.IsNullOrEmpty(address)? "localhost" : address);
         NetworkManager.singleton.StartClient();
 
         joinButton.interactable = false;

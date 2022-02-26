@@ -58,7 +58,9 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Units\UnitFiring.cs" />
     <Compile Include="Assets\Scripts\Units\UnitCommandGiver.cs" />
+    <Compile Include="Assets\Scripts\Menus\JoinLobbyMenu.cs" />
     <Compile Include="Assets\Scripts\Units\UnitProjectile.cs" />
+    <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Networking\RTSNetworkManager.cs" />
     <Compile Include="Assets\Scripts\Units\UnitSelectionHandler.cs" />
     <Compile Include="Assets\Scripts\Buildings\ResourceGenerator.cs" />
@@ -76,14 +78,13 @@
     <Compile Include="Assets\Scripts\Combat\HealthDisplay.cs" />
     <Compile Include="Assets\Scripts\Cameras\FaceCamera.cs" />
     <Compile Include="Assets\Scripts\Networking\TeamColorSetter.cs" />
+    <Compile Include="Assets\Scripts\Menus\LobbyMenu.cs" />
     <Compile Include="Assets\Scripts\Units\UnitMovement.cs" />
     <Compile Include="Assets\Scripts\Buildings\GameOverHandler.cs" />
     <Compile Include="Assets\Scripts\Combat\Targeter.cs" />
     <Compile Include="Assets\Scripts\Networking\RTSPlayer.cs" />
     <Compile Include="Assets\Scripts\Cameras\Minimap.cs" />
-    <Compile Include="Assets\Scripts\Menus\MainMenu.cs" />
-    <Compile Include="Assets\Scripts\Menus\JoinLobbyMenu.cs" />
-    <Compile Include="Assets\Scripts\Menus\LobbyMenu.cs" />
+    <Compile Include="Assets\Scripts\Menus\tmp_text.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />

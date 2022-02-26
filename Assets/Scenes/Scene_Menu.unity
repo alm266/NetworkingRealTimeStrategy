@@ -969,6 +969,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lobbyUI: {fileID: 2122744210}
   startGameButton: {fileID: 2072799470}
+  playerNameTexts:
+  - {fileID: 889647311}
+  - {fileID: 1554238431}
+  - {fileID: 2146270280}
+  - {fileID: 1354141521}
 --- !u!1 &863273049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,7 +1880,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: localhost
+  m_text: 127.0.0.1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
